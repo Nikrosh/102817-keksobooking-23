@@ -10,7 +10,7 @@ const generateWholeNumber = (minNumber, maxNumber) => {
   minNumber = Math.ceil(minNumber);
   maxNumber = Math.floor(maxNumber);
   return Math.floor(Math.random() * (maxNumber - minNumber)) + minNumber;
-}
+};
 
 generateWholeNumber();
 
@@ -24,6 +24,6 @@ const generateNumber = (minNumber, maxNumber, numberAfter) => {
     maxNumber = minNumber;
   }
   return Number((Math.random() * (maxNumber - minNumber) + minNumber).toFixed(numberAfter));
-}
+};
 
 generateNumber();
