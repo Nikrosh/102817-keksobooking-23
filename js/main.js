@@ -50,19 +50,19 @@ const FEATURES_OBJECT = ['wifi', 'dishwasher', 'parking', 'washer', 'elevator', 
 
 //Фото
 
-const PHOTOS_OBJECT = ['https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/duonguyen-8LrGtIxxa4w.jpg', 'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/brandon-hoogenboom-SNxQGWxZQi0.jpg', 'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/claire-rendall-b6kAwr1i0Iw.jpg']
+const PHOTOS_OBJECT = ['https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/duonguyen-8LrGtIxxa4w.jpg', 'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/brandon-hoogenboom-SNxQGWxZQi0.jpg', 'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/claire-rendall-b6kAwr1i0Iw.jpg'];
 
 //Функция для генерации случайного массива строк
 
-const generateStrings = (array) =>  {
-  return array.slice(0, generateWholeNumber(1, array.length -1))
-}
+const generateStrings = (array) => {
+  return array.slice(0, generateWholeNumber(1, array.length -1));
+};
 
 //Объект
 
 const createObject = () => {
-  let locationX = generateNumber(35.65000, 35.70000, 5);
-  let locationY = generateNumber(139.70000, 139.80000, 5);
+  const locationX = generateNumber(35.65000, 35.70000, 5);
+  const locationY = generateNumber(139.70000, 139.80000, 5);
   return {
     author: {
       avatar: 'img/avatars/user' + '0' + generateWholeNumber(1, 10) + '.png',
